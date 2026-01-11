@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Polished - Nail Art Studio</title>
+  <title>Grace's Nail Salon - Nail Art Studio</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     * {
@@ -692,13 +692,23 @@
         grid-template-columns: 1fr;
       }
     }
+
+    /* Contact email link: appear like normal text, underline only on hover */
+    .contact-item a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <!-- Header -->
   <header id="header">
     <div class="container">
-      <a href="#" class="logo">Polished<span>.</span></a>
+      <a href="#" class="logo">Grace's Nail Salon</a>
       <nav>
         <a href="#services">Services</a>
         <a href="#gallery">Gallery</a>
@@ -876,7 +886,7 @@
             <span class="gradient-text">Perfection</span>
           </h2>
           <p>
-            Welcome to Polished, where nail art meets artistry. I'm Grace, and I started this 
+            Welcome to Grace's Nail Salon, where nail art meets artistry. I'm Grace, and I started this 
             journey with a simple belief: everyone deserves to feel beautiful and confident.
           </p>
           <p>
@@ -956,11 +966,21 @@
               </div>
             </div>
             <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <h4 style="font-weight: 600; margin-bottom: 0.25rem;">Email</h4>
+                <p style="color: var(--muted-foreground); font-size: 0.875rem;">
+                  <a href="mailto:gracecanggyc@gmail.com">gracecanggyc@gmail.com</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
               <div class="contact-icon">📷</div>
               <div>
                 <h4 style="font-weight: 600; margin-bottom: 0.25rem;">Instagram</h4>
+                <!--might change the insta idk-->
                 <p style="color: var(--muted-foreground); font-size: 0.875rem;">
-                  @polished.nailart
+                  @dwa_ce
                 </p>
               </div>
             </div>
@@ -1003,7 +1023,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="#" class="logo" style="color: var(--background);">Polished<span>.</span></a>
+          <a href="#" class="logo" style="color: var(--background);">Grace's Nail Salon</a>
           <p>Elevating nail art, one stunning design at a time. Your hands deserve the best.</p>
         </div>
         <div>
@@ -1024,7 +1044,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Polished. All rights reserved.</p>
+        <p>© 2026 Grace's Nail Salon. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -1079,7 +1099,7 @@
         'Message:\n' + (message || 'No message provided')
       );
       
-      window.location.href = 'mailto:hello@polished-nailart.com?subject=' + subject + '&body=' + body;
+      window.location.href = 'mailto:gracecanggyc@gmail.com?subject=' + subject + '&body=' + body;
     });
   </script>
 </body>
